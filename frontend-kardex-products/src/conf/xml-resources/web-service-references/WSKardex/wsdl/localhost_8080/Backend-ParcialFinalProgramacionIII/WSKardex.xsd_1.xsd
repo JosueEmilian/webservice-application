@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service/">
+
+<xs:element name="RegistrarTransaccion" type="tns:RegistrarTransaccion"/>
+
+<xs:element name="RegistrarTransaccionResponse" type="tns:RegistrarTransaccionResponse"/>
+
+<xs:element name="actualizarKardex" type="tns:actualizarKardex"/>
+
+<xs:element name="actualizarKardexResponse" type="tns:actualizarKardexResponse"/>
+
+<xs:element name="eliminarUltimoRegistro" type="tns:eliminarUltimoRegistro"/>
+
+<xs:element name="eliminarUltimoRegistroResponse" type="tns:eliminarUltimoRegistroResponse"/>
+
+<xs:element name="listarKardex" type="tns:listarKardex"/>
+
+<xs:element name="listarKardexResponse" type="tns:listarKardexResponse"/>
+
+<xs:element name="listarUltimoRegistroDeSuCategoria" type="tns:listarUltimoRegistroDeSuCategoria"/>
+
+<xs:element name="listarUltimoRegistroDeSuCategoriaResponse" type="tns:listarUltimoRegistroDeSuCategoriaResponse"/>
+
+<xs:element name="obtenerKardexID" type="tns:obtenerKardexID"/>
+
+<xs:element name="obtenerKardexIDResponse" type="tns:obtenerKardexIDResponse"/>
+
+<xs:complexType name="listarUltimoRegistroDeSuCategoria">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarUltimoRegistroDeSuCategoriaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modelKardex" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modelKardex">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:int"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+<xs:element name="existencia" type="xs:int"/>
+<xs:element name="fecha" type="tns:timestamp" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="idProducto" type="xs:int"/>
+<xs:element name="idTipoMovimiento" type="xs:int"/>
+<xs:element name="idTipoProducto" type="xs:int"/>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="saldo" type="xs:int"/>
+<xs:element name="strFecha" type="xs:string" minOccurs="0"/>
+<xs:element name="strProducto" type="xs:string" minOccurs="0"/>
+<xs:element name="strTipoMovimiento" type="xs:string" minOccurs="0"/>
+<xs:element name="strUsuario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="timestamp">
+<xs:sequence>
+<xs:element name="nanos" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listarKardex">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listarKardexResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modelKardex" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarUltimoRegistro">
+<xs:sequence>
+<xs:element name="ID" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarUltimoRegistroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegistrarTransaccion">
+<xs:sequence>
+<xs:element name="ID_USUARIO" type="xs:int"/>
+<xs:element name="ID_PRODUCTO" type="xs:int"/>
+<xs:element name="ID_TIPO_MOVIMIENTO" type="xs:int"/>
+<xs:element name="CANTIDAD" type="xs:int"/>
+<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RegistrarTransaccionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarKardex">
+<xs:sequence>
+<xs:element name="idKardex" type="xs:int"/>
+<xs:element name="idUsuario" type="xs:int"/>
+<xs:element name="idProducto" type="xs:int"/>
+<xs:element name="idTipoMovimiento" type="xs:int"/>
+<xs:element name="cantidad" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarKardexResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerKardexID">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerKardexIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:modelKardex" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

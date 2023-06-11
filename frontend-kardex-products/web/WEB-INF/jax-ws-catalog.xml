@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSProducto?wsdl" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSProducto.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSProducto?xsd=1" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSProducto.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSProducto?WSDL" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSProducto.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento?WSDL" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento?xsd=1" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSUsuario?WSDL" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSUsuario.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSUsuario?xsd=1" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSUsuario.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSKardex?WSDL" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSKardex.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSKardex?xsd=1" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSKardex.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento?wsdl" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSKardex?Tester" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSKardex.tester"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto?WSDL" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto.wsdl"/>
+    <system systemId="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto?xsd=1" uri="wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto.xsd_1.xsd"/>
+</catalog>

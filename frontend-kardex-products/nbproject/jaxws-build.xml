@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-WSProducto" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSProducto"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSProducto" destdir="${build.generated.dir}/jax-wsCache/WSProducto" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSProducto/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSProducto.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSProducto?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSProducto/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSProducto.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSProducto"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSProducto">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSProducto" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/service"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSProducto"/>
+    </target>
+    <target name="wsimport-client-WSTipoMovimiento" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento" destdir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSTipoMovimiento/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSTipoMovimiento/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoMovimiento.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSTipoMovimiento" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/service"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSTipoMovimiento"/>
+    </target>
+    <target name="wsimport-client-WSUsuario" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSUsuario"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSUsuario" destdir="${build.generated.dir}/jax-wsCache/WSUsuario" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSUsuario/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSUsuario.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSUsuario?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSUsuario/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSUsuario.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSUsuario"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSUsuario">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSUsuario" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/service"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSUsuario"/>
+    </target>
+    <target name="wsimport-client-WSKardex" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSKardex"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSKardex" destdir="${build.generated.dir}/jax-wsCache/WSKardex" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSKardex/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSKardex.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSKardex?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSKardex/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSKardex.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSKardex"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSKardex">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSKardex" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/service"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSKardex"/>
+    </target>
+    <target name="wsimport-client-WSTipoProducto" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSTipoProducto"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSTipoProducto" destdir="${build.generated.dir}/jax-wsCache/WSTipoProducto" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSTipoProducto/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSTipoProducto/wsdl/localhost_8080/Backend-ParcialFinalProgramacionIII/WSTipoProducto.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSTipoProducto"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSTipoProducto">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSTipoProducto" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/service"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSTipoProducto"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WSProducto, wsimport-client-WSTipoMovimiento, wsimport-client-WSUsuario, wsimport-client-WSKardex, wsimport-client-WSTipoProducto"/>
+</project>
